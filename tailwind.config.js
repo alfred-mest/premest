@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "body-color": '#949494'
+        "body-color": '#949494',
+        "mest-teal": "#28BBBB"
       }
     },
   },
