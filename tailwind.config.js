@@ -9,7 +9,7 @@ module.exports = {
     },
   },
   purge: {
-    enabled: true,
+    enabled: false,
     content: ['./*.css', './*.html']
   },
   variants: {},
