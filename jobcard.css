@@ -13,7 +13,7 @@ body {
   height:280px;
   position:relative;
   background:#ffa;
-  overflow:hidden;
+  overflow-y:scroll;
   margin:30px auto;
   padding:20px;
   border-radius:0 0 0 30px/45px;
