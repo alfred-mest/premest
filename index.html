@@ -2,284 +2,141 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PreMEST Graduate Directory</title>
+    <title>PreMEST</title>
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./card.css">
+    
     <script src="./index.js"></script>
   </head>
 
-  <body class=" m-0">
-    <nav class="flex flex-row items-center justify-between px-8 py-4 bg-mest-teal mb-4 shadow-lg">
+  <body class="m-0 bg-body-color">
+    <!--Nav bar -->
+    <nav class="flex flex-row px-6 py-4 bg-white items-center justify-between sticky top-0">
       <div>
-        <p>
-          <a href="https://meltwater.org" target="_blank" rel="noopener">
-            <img src="./mestIlogonotag charcoal.png" class="w-24 h-4"/>
-          </a>
-        </p>
+        <img class="w-28 h-6" src="./image/mestIlogonotag teal.png"/>
       </div>
-      <div class="flex flex-row">
-        <p class="px-4">
-          <a href="./job_board.html">Job Board</a>
-        </p>
-        <div>
-          <select class="bg-mest-teal">
-          <option class="bg-mest-teal">PreMEST Cohort 1</option>
-        </select>
-        </div>
+      <div>
+        <a href="./candidate_profile.html">
+          <p class="uppercase text-white px-4 py-2 rounded-md font-semibold bg-mest-teal opacity-75">
+            Candidates
+          </p>
+        </a>
         
       </div>
     </nav>
-    <div class="flex flex-row flex-wrap justify-start">
 
-      <div class="w-full sm:w-1/2 md:w-1/4 px-4 py-4">
-        <aside class="flex-shrink-0 profile-card">
-          <div class="mask-shadow"></div>
-          <header>
-            <!-- here’s the avatar -->
-            <div class="flex flex-row justify-center mb-1">
-              <a href="https://tutsplus.com">
-              <img src="https://media-exp1.licdn.com/dms/image/C4E03AQG-etHBucsdkg/profile-displayphoto-shrink_400_400/0?e=1607558400&v=beta&t=Abm7BNn_qr9lk9b6SZUclLBySmFUl4Yh4bB6mcKczPo">
-            </a>
+    <div class="flex flex-row">
+      <div class="sm:visible hidden sm:flex flex-row items-center px-8 py-8">
+        <!--Side filter: Does not show on mobile -->
+        <div class="px-6 py-6 bg-white w-64 text-sm">
+          <div class=" mb-4">
+            <p class="text-lg font-medium py-2">Type of Employment</p>
+            <div class="flex flex-row items-center">
+              <input class=" checked:mest-teal" type="checkbox"/> <label class="px-4">Full Time</label>
+            </div>
+            <div class="flex flex-row items-center">
+              <input class=" checked:mest-teal" type="checkbox"/> <label class="px-4">Part Time</label>
+            </div>
+            <div class="flex flex-row items-center">
+              <input class=" checked:mest-teal" type="checkbox"/> <label class="px-4">Remote</label>
+            </div>
+            <div class="flex flex-row items-center">
+              <input class=" checked:mest-teal" type="checkbox"/> <label class="px-4">Internship</label>
             </div>
             
-            <!-- the username -->
-            <h1>Julia <br>Lartey</h1>
-            <!-- and role or location -->
-            <h2>Fullstack Developer</h2>
-          </header>
-          <!-- bit of a bio; who are you? -->
-          <div class="profile-bio">
-            <p>
-              Ashwin is an avid reader of science fiction, especially 
-              anything to do with aliens and tweed jackets. Most weekends, 
-              he can be found cataloguing his collection.</p>
           </div>
-          <!-- some social links to show off -->
-          <div class="profile-social-links flex flex-row justify-center items-center">
-            <div class="mx-2 bg-gray-300 rounded-full px-2 py-1">
-              <a class="" href="https://twitter.com/ashwin107" target="_blank" rel="noopener">
-                <img class="h-6 w-8 transform hover:scale-125" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/social-twitter.svg">
-              </a>
+   
+          <div class="my-4">
+            <p class="text-lg font-medium py-2">Category</p>
+            <div class="flex flex-row items-center">
+              <input class=" checked:mest-teal" type="checkbox"/> <label class="px-4">Software Development</label>
             </div>
-            <div class="mx-2 bg-gray-300 rounded-full px-2 py-2">
-              <a class=" "  href="https://envato.com" target="_blank" rel="noopener">
-                <img class="h-5 w-8 transform hover:scale-125" src="https://cdn.iconscout.com/icon/free/png-512/linkedin-circle-1868976-1583140.png">
-              </a>
+            <div class="flex flex-row items-center">
+              <input class=" checked:mest-teal" type="checkbox"/> <label class="px-4">Digital Marketing</label>
             </div>
-            <div class="mx-2 bg-gray-300 rounded-full px-2 py-1">
-              <a class=""  href="https://codepen.io/tutsplus" target="_blank" rel="noopener">
-                <img class="h-6 w-8 transform hover:scale-125" class="h-8 w-8" src="https://www.flaticon.com/svg/static/icons/svg/25/25231.svg">
-              </a>
+            <div class="flex flex-row items-center">
+              <input class=" checked:mest-teal" type="checkbox"/> <label class="px-4">Others</label>
             </div>
-            <div class="mx-2 bg-gray-300 rounded-full px-2 py-2">
-              <a href="https://codepen.io/tutsplus">
-                <a href="mailto:angeljulia.lartey125@gmail.com"><img class="h-6 w-8 transform hover:scale-125" src="https://image.flaticon.com/icons/png/512/666/666162.png"></a>
-              </a>
-            </div>
-
+            
           </div>
-        </aside>
+        </div>
+        
       </div>
+  
+      <div class="px-6 py-8 w-full sm:w-3/4 m-0">
+        <div class="px-2 flex flex-row items-center justify-between">
+          <p class="text-xs font-bold">Showing 1 job</p>
 
-      <div class="w-full sm:w-1/2 md:w-1/4 px-4 py-4">
-        <aside class="flex-shrink-0 profile-card">
-          <div class="mask-shadow"></div>
-          <header>
-            <!-- here’s the avatar -->
-            <div class="flex flex-row justify-center mb-1">
-              <a href="https://tutsplus.com">
-              <img src="https://media-exp1.licdn.com/dms/image/C4E03AQG-etHBucsdkg/profile-displayphoto-shrink_400_400/0?e=1607558400&v=beta&t=Abm7BNn_qr9lk9b6SZUclLBySmFUl4Yh4bB6mcKczPo">
-            </a>
-            </div>
+          <div class="sm:visible hidden sm:flex flex-row items-center text-xs">
+            <p class="font-hairline">Sort By:</p>
+            <select class="bg-body-color">
+              <option>Newest Jobs</option>
+              <option>Oldest Jobs</option>
+            </select>
+          </div>
+
+        </div>
+  
+        <div class="flex flex-row flex-wrap justify-center sm:justify-start">
+          
+          <!-- Job Display Card-->
+          <div class="w-5/6 px-2 md:w-1/3 py-2 my-4">
+            <div class="bg-white px-6 py-2">
+              <!-- Compnay Logo -->
+              <div >
+                <img src="./image/kpi.svg" class="w-20 h-20"/>
+              </div>
+              <!-- Job Title-->
+              <p class="py-2 text-sm font-semibold">
+                Frontend Developer
+              </p>
+              <!-- Short description-->
+              <p class="py-2 text-xs h-30 overflow-hidden">
+                The frontend Role is intended for individuals who with experience with 
+                ReactJS and can manage. The frontend Role is intended for individuals who with experience with 
+                ReactJS and can manage...
+              </p>
+              <div class="flex flex-row my-2 overflow-x-hidden">
+                <p class="text-mest-teal px-2 mx-1 text-xs rounded-md border border-mest-teal opacity-75">Intern</p>
+                <p class="text-mest-teal px-2 mx-1 text-xs rounded-md border border-mest-teal opacity-75">Fullstack</p>
+              </div>
+              <div class="flex flex-row items-center sm:justify-start my-4">
+                <button class="px-6 py-1 text-sm text-white bg-mest-teal font-med rounded-lg uppercase">Apply</button>
+              </div>
+            </div>  
             
-            <!-- the username -->
-            <h1>Ashwin <br>Ravichandran</h1>
-            <!-- and role or location -->
-            <h2>Fullstack Developer</h2>
-          </header>
-          <!-- bit of a bio; who are you? -->
-          <div class="profile-bio">
-            <p>
-              Ashwin is an avid reader of science fiction, especially 
-              anything to do with aliens and tweed jackets. Most weekends, 
-              he can be found cataloguing his collection.</p>
           </div>
-          <!-- some social links to show off -->
-          <div class="profile-social-links flex flex-row justify-center items-center">
-            <div class="mx-2 bg-gray-300 rounded-full px-2 py-1">
-              <a class="" href="https://twitter.com/ashwin107" target="_blank" rel="noopener">
-                <img class="h-6 w-8 transform hover:scale-125" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/social-twitter.svg">
-              </a>
-            </div>
-            <div class="mx-2 bg-gray-300 rounded-full px-2 py-2">
-              <a class=" "  href="https://envato.com" target="_blank" rel="noopener">
-                <img class="h-5 w-8 transform hover:scale-125" src="https://cdn.iconscout.com/icon/free/png-512/linkedin-circle-1868976-1583140.png">
-              </a>
-            </div>
-            <div class="mx-2 bg-gray-300 rounded-full px-2 py-1">
-              <a class=""  href="https://codepen.io/tutsplus" target="_blank" rel="noopener">
-                <img class="h-6 w-8 transform hover:scale-125" class="h-8 w-8" src="https://www.flaticon.com/svg/static/icons/svg/25/25231.svg">
-              </a>
-            </div>
-            <div class="mx-2 bg-gray-300 rounded-full px-2 py-2">
-              <a href="https://codepen.io/tutsplus">
-                <img class="h-6 w-8 transform hover:scale-125" src="https://image.flaticon.com/icons/png/512/666/666162.png">
-              </a>
-            </div>
 
-          </div>
-        </aside>
-      </div>
-
-      <div class="w-full sm:w-1/2 md:w-1/4 px-4 py-4">
-        <aside class="flex-shrink-0 profile-card">
-          <div class="mask-shadow"></div>
-          <header>
-            <!-- here’s the avatar -->
-            <div class="flex flex-row justify-center mb-1">
-              <a href="https://tutsplus.com">
-              <img src="https://media-exp1.licdn.com/dms/image/C4E03AQG-etHBucsdkg/profile-displayphoto-shrink_400_400/0?e=1607558400&v=beta&t=Abm7BNn_qr9lk9b6SZUclLBySmFUl4Yh4bB6mcKczPo">
-            </a>
-            </div>
+          <!-- Job Display Card-->
+          <div class="w-5/6 md:w-1/3 px-2 py-2 my-4">
+            <div class="bg-white px-6 py-2">
+              <!-- Compnay Logo -->
+              <div >
+                <img src="./image/insurerity_logo.png" class="w-28 h-20"/>
+              </div>
+              <!-- Job Title-->
+              <p class="py-2 text-sm font-semibold">
+                Fullstack Intern
+              </p>
+              <!-- Short description-->
+              <p class="py-2 text-xs h-30 overflow-hidden">
+                Insurerity Digital builds SaaS platform for Insurers, Brokers and Agents to digitize their operations. 
+                The expectation would be that the intern role would evolve into a full-time role.
+              </p>
+              <div class="flex flex-row my-2 overflow-x-hidden">
+                <p class="text-mest-teal px-2 mx-1 text-xs rounded-md border border-mest-teal opacity-75">Intern</p>
+                <p class="text-mest-teal px-2 mx-1 text-xs rounded-md border border-mest-teal opacity-75">Fullstack</p>
+              </div>
+              <div class="flex flex-row items-center sm:justify-start my-4">
+                <button class="px-6 py-1 text-white text-sm font-medium bg-mest-teal rounded-lg uppercase">Apply</button>
+              </div>
+            </div>  
             
-            <!-- the username -->
-            <h1>Ashwin Ravichandran</h1>
-            <!-- and role or location -->
-            <h2>Fullstack Developer</h2>
-          </header>
-          <!-- bit of a bio; who are you? -->
-          <div class="profile-bio">
-            <p>
-              Ashwin is an avid reader of science fiction, especially 
-              anything to do with aliens and tweed jackets. Most weekends, 
-              he can be found cataloguing his collection.</p>
           </div>
-          <!-- some social links to show off -->
-          <div class="profile-social-links flex flex-row justify-center items-center">
-            <div class="mx-2 bg-gray-300 rounded-full px-2 py-1">
-              <a class="" href="https://twitter.com/ashwin107" target="_blank" rel="noopener">
-                <img class="h-6 w-8 transform hover:scale-125" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/social-twitter.svg">
-              </a>
-            </div>
-            <div class="mx-2 bg-gray-300 rounded-full px-2 py-2">
-              <a class=" "  href="https://envato.com" target="_blank" rel="noopener">
-                <img class="h-5 w-8 transform hover:scale-125" src="https://cdn.iconscout.com/icon/free/png-512/linkedin-circle-1868976-1583140.png">
-              </a>
-            </div>
-            <div class="mx-2 bg-gray-300 rounded-full px-2 py-1">
-              <a class=""  href="https://codepen.io/tutsplus" target="_blank" rel="noopener">
-                <img class="h-6 w-8 transform hover:scale-125" class="h-8 w-8" src="https://www.flaticon.com/svg/static/icons/svg/25/25231.svg">
-              </a>
-            </div>
-            <div class="mx-2 bg-gray-300 rounded-full px-2 py-2">
-              <a href="https://codepen.io/tutsplus">
-                <img class="h-6 w-8 transform hover:scale-125" src="https://image.flaticon.com/icons/png/512/666/666162.png">
-              </a>
-            </div>
 
-          </div>
-        </aside>
-      </div>
-
-      <div class="w-full sm:w-1/2 md:w-1/4 px-4 py-4">
-        <aside class="flex-shrink-0 profile-card">
-          <div class="mask-shadow"></div>
-          <header>
-            <!-- here’s the avatar -->
-            <div class="flex flex-row justify-center mb-1">
-              <a href="https://tutsplus.com">
-              <img src="https://media-exp1.licdn.com/dms/image/C4E03AQG-etHBucsdkg/profile-displayphoto-shrink_400_400/0?e=1607558400&v=beta&t=Abm7BNn_qr9lk9b6SZUclLBySmFUl4Yh4bB6mcKczPo">
-            </a>
-            </div>
-            
-            <!-- the username -->
-            <h1>Ashwin Ravichandran</h1>
-            <!-- and role or location -->
-            <h2>Fullstack Developer</h2>
-          </header>
-          <!-- bit of a bio; who are you? -->
-          <div class="profile-bio">
-            <p>
-              Ashwin is an avid reader of science fiction, especially 
-              anything to do with aliens and tweed jackets. Most weekends, 
-              he can be found cataloguing his collection.</p>
-          </div>
-          <!-- some social links to show off -->
-          <div class="profile-social-links flex flex-row justify-center items-center">
-            <div class="mx-2 bg-gray-300 rounded-full px-2 py-1">
-              <a class="" href="https://twitter.com/ashwin107" target="_blank" rel="noopener">
-                <img class="h-6 w-8 transform hover:scale-125" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/social-twitter.svg">
-              </a>
-            </div>
-            <div class="mx-2 bg-gray-300 rounded-full px-2 py-2">
-              <a class=" "  href="https://envato.com" target="_blank" rel="noopener">
-                <img class="h-5 w-8 transform hover:scale-125" src="https://cdn.iconscout.com/icon/free/png-512/linkedin-circle-1868976-1583140.png">
-              </a>
-            </div>
-            <div class="mx-2 bg-gray-300 rounded-full px-2 py-1">
-              <a class=""  href="https://codepen.io/tutsplus" target="_blank" rel="noopener">
-                <img class="h-6 w-8 transform hover:scale-125" class="h-8 w-8" src="https://www.flaticon.com/svg/static/icons/svg/25/25231.svg">
-              </a>
-            </div>
-            <div class="mx-2 bg-gray-300 rounded-full px-2 py-2">
-              <a href="https://codepen.io/tutsplus">
-                <img class="h-6 w-8 transform hover:scale-125" src="https://image.flaticon.com/icons/png/512/666/666162.png">
-              </a>
-            </div>
-
-          </div>
-        </aside>
-      </div>
-
-      <div class="w-full sm:w-1/2 md:w-1/4 px-4 py-4">
-        <aside class="flex-shrink-0 profile-card">
-          <div class="mask-shadow"></div>
-          <header>
-            <!-- here’s the avatar -->
-            <div class="flex flex-row justify-center mb-1">
-              <a href="https://tutsplus.com">
-              <img src="https://media-exp1.licdn.com/dms/image/C4E03AQG-etHBucsdkg/profile-displayphoto-shrink_400_400/0?e=1607558400&v=beta&t=Abm7BNn_qr9lk9b6SZUclLBySmFUl4Yh4bB6mcKczPo">
-            </a>
-            </div>
-            
-            <!-- the username -->
-            <h1>Ashwin Ravichandran</h1>
-            <!-- and role or location -->
-            <h2>Fullstack Developer</h2>
-          </header>
-          <!-- bit of a bio; who are you? -->
-          <div class="profile-bio">
-            <p>
-              Ashwin is an avid reader of science fiction, especially 
-              anything to do with aliens and tweed jackets. Most weekends, 
-              he can be found cataloguing his collection.</p>
-          </div>
-          <!-- some social links to show off -->
-          <div class="profile-social-links flex flex-row justify-center items-center">
-            <div class="mx-2 bg-gray-300 rounded-full px-2 py-1">
-              <a class="" href="https://twitter.com/ashwin107" target="_blank" rel="noopener">
-                <img class="h-6 w-8 transform hover:scale-125" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/social-twitter.svg">
-              </a>
-            </div>
-            <div class="mx-2 bg-gray-300 rounded-full px-2 py-2">
-              <a class=" "  href="https://envato.com" target="_blank" rel="noopener">
-                <img class="h-5 w-8 transform hover:scale-125" src="https://cdn.iconscout.com/icon/free/png-512/linkedin-circle-1868976-1583140.png">
-              </a>
-            </div>
-            <div class="mx-2 bg-gray-300 rounded-full px-2 py-1">
-              <a class=""  href="https://codepen.io/tutsplus" target="_blank" rel="noopener">
-                <img class="h-6 w-8 transform hover:scale-125" class="h-8 w-8" src="https://www.flaticon.com/svg/static/icons/svg/25/25231.svg">
-              </a>
-            </div>
-            <div class="mx-2 bg-gray-300 rounded-full px-2 py-2">
-              <a href="https://codepen.io/tutsplus">
-                <img class="h-6 w-8 transform hover:scale-125" src="https://image.flaticon.com/icons/png/512/666/666162.png">
-              </a>
-            </div>
-
-          </div>
-        </aside>
+        </div>
       </div>
     </div>
+    
+
   </body>
 </html>
