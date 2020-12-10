@@ -23,8 +23,12 @@
       </div>
     </nav>
 
+    <!--
+      Remove sm:visible sm:flex
+
+    -->
     <div class="flex flex-row">
-      <div class="sm:visible hidden sm:flex flex-row px-8 py-8">
+      <div class="hidden flex-row px-8 py-8">
         <!--Side filter: Does not show on mobile -->
         <div class="px-6 py-6 bg-white w-64 h-80 text-sm">
           <div class=" mb-4">
@@ -60,9 +64,14 @@
         </div>
         
       </div>
-  
-      <div class="px-6 py-8 w-full sm:w-3/4 m-0">
-        <div class="px-2 flex flex-row items-center justify-between">
+      
+      <!--
+        remove sm:w-3/4 
+        add sm:w-1/3
+      -->
+      <div class="px-6 py-8 w-full sm:w-1/3 m-0">
+        <!-- Remove flex, add hidden -->
+        <div class="hidden px-2 flex-row items-center justify-between">
           <p class="text-xs font-bold">Showing 1 job</p>
 
           <div class="sm:visible hidden sm:flex flex-row items-center text-xs">
@@ -74,13 +83,21 @@
           </div>
 
         </div>
-  
-        <div class="flex flex-row flex-wrap justify-center sm:justify-start">
-                  
 
+
+        <!--
+            add sm:overflow-y-scroll, sm:w-5/6
+            remove sm:w-full
+          -->
+        <div class="sm:w-5/6 sm:overflow-y-scroll flex flex-row flex-wrap justify-center sm:justify-start">
+                  
+          <!-- 
+            Remove md:w-1/3
+          -->
           <!-- Job Display Card-->
-          <div class="w-5/6 sm:w-full md:w-1/3 px-2 py-2 my-4">
-            <div class="bg-white px-6 py-2">
+          <div class="w-5/6 sm:w-full px-2 py-2 my-4">
+
+            <div class="bg-white px-6 py-2 my-4">
               <!-- Compnay Logo -->
               <div >
                 <img src="./image/insurerity_logo.png" class="w-28 h-20"/>
@@ -98,16 +115,51 @@
                 <p class="text-mest-teal px-2 mx-1 text-xs rounded-md border border-mest-teal opacity-75">Intern</p>
                 <p class="text-mest-teal px-2 mx-1 text-xs rounded-md border border-mest-teal opacity-75">Fullstack</p>
               </div>
-              <div class="flex flex-row items-center sm:justify-start my-4">
-                <a href="details.html"><p class="apply-button px-6 py-1 text-white text-sm font-medium bg-mest-teal rounded-lg uppercase">Apply</p></a>
+              <div class="sm:hidden flex-row items-center sm:justify-start my-4">
+                <button class="apply-button px-6 py-1 text-white text-sm font-medium bg-mest-teal rounded-lg uppercase">Apply</button>
               </div>
-            </div>  
+            </div>
             
-          </div>
+            
+          
 
         </div>
       </div>
     </div>
+    <div class="sm:w-2/3 px-8 py-4 bg-white my-10 mr-10">
+      <p class="text-3xl my-4 font-semibold">Fullstack Intern, Insurerity</p>
+      <p>
+        Insurerity Digital builds SaaS platform for Insurers, Brokers and Agents to digitize their operations.
+      </p>
+      <p class="text-xl my-4 py-2">Job Description</p>
+      <p class="my-2">
+        The Full stack candidate should have the following skills or want to improve:
+      </p>  
+      <p class="my-2">
+        <ul class="list-disc">
+          <li>
+            Javascript
+          </li>
+          <li>
+            Flutter
+          </li>
+          <li>
+            Very conscious with time and love to collaborate. 
+          </li>
+        </ul>
+      </p>
+      <p class="my-2">
+        We have great developers to learn from also.
+        The expectation would be that the intern role would evolve into a full-time role.
+        To apply, please upload your CV and Cover Letter via wetransfer.com, emailing to raphael.somaila@fimail.co
+        (Compensation: 100 GHS per month for data. If there is any travel, is a a perdiem of 50 GHS)
+      </p>
+
+      <div class="flex flex-row justify-center">
+        <a href="https://wetransfer.com"><p class="bg-mest-teal px-4 py-2 rounded my-4 font-semibold text-white">Apply</p></a>
+      </div>
+    </div>
+
   </body>
 
   <script src="./index.js"></script>

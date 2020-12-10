@@ -18,4 +18,37 @@ function getProfiles() {
     .catch(err => console.error(err));
 }
 
-getProfiles();
+function addListenerToApplyButton() {
+  const buttons = document.querySelectorAll(".apply-button");
+
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", applyButtonClick);
+  }
+}
+function handleSmScreenApplyClick() {
+
+}
+
+function handleMobileScreenApplyClick() {
+  const sideFilter = document.querySelector(".side-filter");
+  sideFilter.classList.add("hidden");
+
+  const jobsRow = document.querySelector(".job-row");
+  const jobCards = document.querySelectorAll(".job-card");
+
+  for (let i = 0; i < jobCards.length; i++) {
+    jobCards[i].classList.remove("md:w-1/3");
+    //jobCards[i].classList.add("md:w-1/3");
+  }
+  jobsRow.classList.add('w-1/3');
+  jobsRow.classList.add('overflow-y-scroll');
+  jobsRow.classList.add('h-screen');
+}
+
+function applyButtonClick() {
+  //event.preventDefault();
+  console.log('Button clicked');
+
+}
+
+addListenerToApplyButton();
