@@ -7,7 +7,7 @@
     
   </head>
 
-  <body class="m-0 bg-body-color">
+  <body class="m-0 bg-body-color min-h-screen flex flex-col">
     <!--Nav bar -->
     <nav class="flex flex-row px-6 py-4 bg-white items-center justify-between sticky top-0">
       <div>
@@ -23,7 +23,7 @@
       </div>
     </nav>
 
-    <div class="flex flex-row">
+    <div class="flex flex-row flex-grow">
       <div class="sm:visible hidden sm:flex flex-row px-8 py-8">
         <!--Side filter: Does not show on mobile -->
         <div class="px-6 py-6 bg-white w-64 h-80 text-sm">
@@ -106,6 +106,17 @@
           </div>
 
         </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class=" bottom-0 sticky flex flex-row bg-white justify-between px-8 py-4 text-mest-teal">
+      <div>
+        <p>MEST</p>
+      </div>
+      <div class="flex flex-row">
+        <a href="https://meltwater.org/privacy-policy/"><p class="mx-4">Privacy Policy</p></a>
+        <a href="https://meltwater.org/cookie-policy/"><p class="mx-4">Cookie Policy</p></a>
       </div>
     </div>
   </body>

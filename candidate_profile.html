@@ -8,7 +8,7 @@
     <script src="./index.js"></script>
   </head>
 
-  <body class="m-0 bg-body-color">
+  <body class="m-0 bg-body-color flex flex-col">
     <!--Nav bar -->
     <nav class="flex flex-row px-6 py-4 bg-mest-teal items-center justify-between sticky top-0">
       <div>
@@ -24,7 +24,7 @@
       </div>
     </nav>
 
-    <div class="flex flex-row flex-wrap px-16 py-8">
+    <div class="flex flex-row flex-wrap px-16 py-8 flex-grow">
 
       <!-- Candidate card-->
       <div class="w-7/8 md:w-1/3 sm:w-1/2 px-4 my-8">
@@ -378,6 +378,16 @@
 
     </div>
     
+    <!-- Footer -->
+    <div class=" bottom-0 sticky flex flex-row bg-mest-teal justify-between px-8 py-4 text-white">
+      <div>
+        <p>MEST</p>
+      </div>
+      <div class="flex flex-row">
+        <a href="https://meltwater.org/privacy-policy/"><p class="mx-4">Privacy Policy</p></a>
+        <a href="https://meltwater.org/cookie-policy/"><p class="mx-4">Cookie Policy</p></a>
+      </div>
+    </div>
 
   </body>
 </html>
