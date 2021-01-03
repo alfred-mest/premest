@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreMEST</title>
+    <link rel="stylesheet" href="./index.css">
+    
+  </head>
+
+  <body class="m-0 bg-body-color min-h-screen flex flex-col">
+    <!--Nav bar -->
+    <nav class="flex flex-row px-6 py-4 bg-white items-center justify-between sticky top-0">
+      <div>
+        <img class="w-28 h-6" src="./image/mestIlogonotag teal.png"/>
+      </div>
+      <div>
+        <a href="./candidate_profile.html">
+          <p class="uppercase text-white px-4 py-2 rounded-md font-semibold bg-mest-teal opacity-75">
+            Candidates
+          </p>
+        </a>
+        
+      </div>
+    </nav>
+
+    <div class="flex flex-row flex-grow">
+      <div class="sm:visible hidden sm:flex flex-row px-8 py-8">
+        <!--Side filter: Does not show on mobile -->
+        <div class="px-6 py-6 bg-white w-64 h-80 text-sm">
+          <div class=" mb-4">
+            <p class="text-lg font-medium py-2">Type of Employment</p>
+            <div class="flex flex-row items-center">
+              <input class=" checked:mest-teal" type="checkbox"/> <label class="px-4">Full Time</label>
+            </div>
+            <div class="flex flex-row items-center">
+              <input class=" checked:mest-teal" type="checkbox"/> <label class="px-4">Part Time</label>
+            </div>
+            <div class="flex flex-row items-center">
+              <input class=" checked:mest-teal" type="checkbox"/> <label class="px-4">Remote</label>
+            </div>
+            <div class="flex flex-row items-center">
+              <input class=" checked:mest-teal" type="checkbox"/> <label class="px-4">Internship</label>
+            </div>
+            
+          </div>
+   
+          <div class="my-4">
+            <p class="text-lg font-medium py-2">Category</p>
+            <div class="flex flex-row items-center">
+              <input class=" checked:mest-teal" type="checkbox"/> <label class="px-4">Software Development</label>
+            </div>
+            <div class="flex flex-row items-center">
+              <input class=" checked:mest-teal" type="checkbox"/> <label class="px-4">Digital Marketing</label>
+            </div>
+            <div class="flex flex-row items-center">
+              <input class=" checked:mest-teal" type="checkbox"/> <label class="px-4">Others</label>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+  
+      <div class="px-6 py-8 w-full sm:w-3/4 m-0">
+        <div class="px-2 flex flex-row items-center justify-between">
+          <p class="text-xs font-bold">Showing 1 job</p>
+
+          <div class="sm:visible hidden sm:flex flex-row items-center text-xs">
+            <p class="font-hairline">Sort By:</p>
+            <select class="bg-body-color">
+              <option>Newest Jobs</option>
+              <option>Oldest Jobs</option>
+            </select>
+          </div>
+
+        </div>
+  
+        <div class="flex flex-row flex-wrap justify-center sm:justify-start">
+                  
+
+          <!-- Job Display Card-->
+          <div class="w-5/6 sm:w-full md:w-1/3 px-2 py-2 my-4">
+            <div class="bg-white px-6 py-2">
+              <!-- Compnay Logo -->
+              <div >
+                <img src="./image/insurerity_logo.png" class="w-28 h-20"/>
+              </div>
+              <!-- Job Title-->
+              <p class="py-2 text-sm font-semibold">
+                Fullstack Intern
+              </p>
+              <!-- Short description-->
+              <p class="py-2 text-xs h-30 overflow-hidden">
+                Insurerity Digital builds SaaS platform for Insurers, Brokers and Agents to digitize their operations. 
+                The expectation would be that the intern role would evolve into a full-time role.
+              </p>
+              <div class="flex flex-row my-2 overflow-x-hidden">
+                <p class="text-mest-teal px-2 mx-1 text-xs rounded-md border border-mest-teal opacity-75">Intern</p>
+                <p class="text-mest-teal px-2 mx-1 text-xs rounded-md border border-mest-teal opacity-75">Fullstack</p>
+              </div>
+              <div class="flex flex-row items-center sm:justify-start my-4">
+                <a href="details.html"><p class="apply-button px-6 py-1 text-white text-sm font-medium bg-mest-teal rounded-lg uppercase">Apply</p></a>
+              </div>
+            </div>  
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class=" bottom-0 sticky flex flex-row bg-white justify-between px-8 py-4 text-mest-teal">
+      <div>
+        <p>MEST</p>
+      </div>
+      <div class="flex flex-row">
+        <a href="https://meltwater.org/privacy-policy/"><p class="mx-4">Privacy Policy</p></a>
+        <a href="https://meltwater.org/cookie-policy/"><p class="mx-4">Cookie Policy</p></a>
+      </div>
+    </div>
+  </body>
+
+  <script src="./index.js"></script>
+</html>
