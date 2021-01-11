@@ -1,0 +1,8 @@
+@font-face {
+  font-family: meltwater;
+  src: url(Brown-Regular.otf);
+}
+
+body {
+  font-family: meltwater;
+}
